@@ -21,4 +21,4 @@ cd /app
 yarn lerna bootstrap
 
 echo ""
-echo "Everything done, have a nice day :-)!"
+echo "Node installation done, have a nice day :-)!"
