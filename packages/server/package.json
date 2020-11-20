@@ -1,0 +1,35 @@
+{
+  "name": "@ntlvb/server",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Serabass <serabass565@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com/"
+  },
+  "scripts": {
+    "clean": "rimraf dist node_modules",
+    "start": "ts-node src/server",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@ntlvb/module": "link:../module",
+    "express": "^4.17.1",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.0.0"
+  }
+}

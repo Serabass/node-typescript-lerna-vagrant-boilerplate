@@ -1,0 +1,13 @@
+{
+  "name": "node-typescript-lerna-vagrant-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "lerna run start",
+    "clean": "lerna run clean"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
