@@ -4,4 +4,4 @@ echo 'Running the server'
 
 cd /app
 
-yarn start &
+yarn start

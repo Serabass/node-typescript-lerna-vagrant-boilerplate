@@ -12,4 +12,4 @@ app.listen(PORT);
 
 console.log(`Server listening http://localhost:${PORT}`);
 
-console.log(add(1,6));
+console.log(add(1,1));

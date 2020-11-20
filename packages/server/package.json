@@ -18,12 +18,13 @@
   },
   "scripts": {
     "clean": "rimraf dist node_modules",
-    "start": "nodemon -w ./src -e ts -x ts-node src/server -L",
+    "start": "pm2 start",
     "test": "jest"
   },
   "dependencies": {
     "@app/module": "file:../module",
     "express": "^4.17.1",
+    "pm2": "^4.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.2"
   },

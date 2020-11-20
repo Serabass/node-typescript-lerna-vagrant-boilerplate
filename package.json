@@ -11,6 +11,8 @@
     "lerna": "^3.22.1"
   },
   "dependencies": {
-    "rimraf": "^3.0.2"
+    "pm2": "^4.5.0",
+    "rimraf": "^3.0.2",
+    "tsconfig-paths": "^3.9.0"
   }
 }
