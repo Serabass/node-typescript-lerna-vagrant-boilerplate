@@ -1,5 +1,5 @@
 {
-  "name": "@ntlvb/server",
+  "name": "@app/server",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Serabass <serabass565@gmail.com>",
@@ -18,11 +18,11 @@
   },
   "scripts": {
     "clean": "rimraf dist node_modules",
-    "start": "ts-node src/server",
+    "start": "nodemon -w ./src -e ts -x ts-node src/server -L",
     "test": "jest"
   },
   "dependencies": {
-    "@ntlvb/module": "file:../module",
+    "@app/module": "file:../module",
     "express": "^4.17.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.2"
