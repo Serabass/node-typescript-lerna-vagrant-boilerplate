@@ -1,6 +1,7 @@
 #!/bin/bash
 
 NODE_VERSION=14.15.1
+NPM_REGISTRY=http://192.168.1.3:4873
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 echo "source ~/.nvm/nvm.sh" >> ~/.profile
@@ -15,8 +16,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt update && sudo apt install yarn -y
 
-yarn global add lerna nodemon ts-node rimraf pm2
-pm2 install typescript
+yarn config set registry ${NPM_REGISTRY}
+npm config set registry ${NPM_REGISTRY}
+
+yarn global add lerna nodemon ts-node rimraf --registry=${NPM_REGISTRY}
 
 echo ""
 echo "Node installation done, have a nice day :-)!"
