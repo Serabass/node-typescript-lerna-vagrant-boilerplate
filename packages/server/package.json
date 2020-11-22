@@ -1,17 +1,19 @@
 {
   "name": "@app/server",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Serabass <serabass565@gmail.com>",
   "homepage": "",
+  "private": true,
   "license": "ISC",
-  "main": "lib/server.js",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
   "directories": {
-    "lib": "lib",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://registry.yarnpkg.com/"
@@ -22,7 +24,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@app/module": "file:../module",
+    "@app/module": "link:../module",
+    "@types/browser-sync": "^2.26.1",
+    "browser-sync": "^2.26.13",
     "express": "^4.17.1",
     "pm2": "^4.5.0",
     "rimraf": "^3.0.2",

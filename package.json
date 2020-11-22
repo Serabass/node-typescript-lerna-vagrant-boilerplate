@@ -2,8 +2,11 @@
   "name": "node-typescript-lerna-vagrant-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
   "scripts": {
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap",
     "start": "lerna run start",
     "clean": "lerna run clean"
   },
@@ -14,5 +17,8 @@
     "pm2": "^4.5.0",
     "rimraf": "^3.0.2",
     "tsconfig-paths": "^3.9.0"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

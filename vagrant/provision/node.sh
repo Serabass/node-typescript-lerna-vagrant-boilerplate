@@ -17,8 +17,5 @@ sudo apt update && sudo apt install yarn -y
 
 yarn global add lerna nodemon ts-node rimraf
 
-cd /app
-yarn lerna bootstrap
-
 echo ""
 echo "Node installation done, have a nice day :-)!"
