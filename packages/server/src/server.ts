@@ -14,7 +14,7 @@ app.get('/', (...[, res]) => {
     res.write('<html>');
     {
         res.write('<body>');
-        res.write(`App works1!`);
+        res.write(`App works!`);
         res.write(bsClientScript);
         res.write('</body>');
     }
