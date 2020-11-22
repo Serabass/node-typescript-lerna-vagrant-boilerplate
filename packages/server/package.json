@@ -24,7 +24,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@app/module": "link:../module",
+    "@app/module": "^0.0.4",
     "@types/browser-sync": "^2.26.1",
     "browser-sync": "^2.26.13",
     "express": "^4.17.1",
@@ -38,5 +38,6 @@
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.0.0"
-  }
+  },
+  "gitHead": "adf1c4f7a831a82872675e9200feb661a3f7d12c"
 }
