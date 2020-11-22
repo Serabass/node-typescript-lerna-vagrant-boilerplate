@@ -19,6 +19,7 @@
   },
   "scripts": {
     "clean": "rimraf dist node_modules",
+    "prepublish": "yarn build",
     "build": "tsc"
   },
   "dependencies": {
@@ -28,5 +29,6 @@
   "devDependencies": {
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4"
-  }
+  },
+  "gitHead": "d5b5d2ca95a4df29fefb0936851e211b6490598c"
 }
