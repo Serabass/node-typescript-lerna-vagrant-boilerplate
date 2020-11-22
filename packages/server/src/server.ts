@@ -1,6 +1,6 @@
 import express from 'express';
 import bs from 'browser-sync';
-// import {add} from '@app/module';
+import {add} from '@app/module';
 
 const PORT = 3000;
 let app = express();
@@ -14,7 +14,7 @@ app.get('/', (...[, res]) => {
     res.write('<html>');
     {
         res.write('<body>');
-        res.write(`App works!`);
+        res.write(`App works${add(1, 2)}!`);
         res.write(bsClientScript);
         res.write('</body>');
     }

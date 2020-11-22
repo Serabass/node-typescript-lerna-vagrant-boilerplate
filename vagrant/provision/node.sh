@@ -15,7 +15,8 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt update && sudo apt install yarn -y
 
-yarn global add lerna nodemon ts-node rimraf
+yarn global add lerna nodemon ts-node rimraf pm2
+pm2 install typescript
 
 echo ""
 echo "Node installation done, have a nice day :-)!"
