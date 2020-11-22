@@ -4,7 +4,6 @@
   "description": "> TODO: description",
   "author": "Serabass <serabass565@gmail.com>",
   "homepage": "",
-  "private": true,
   "license": "ISC",
   "main": "dist/server.js",
   "types": "dist/server.d.ts",
